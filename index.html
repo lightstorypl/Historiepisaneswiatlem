@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>LiveStory – Historie pisane światłem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f6f4f1;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #0b0b0b, #3a2c1a);
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #e0c89c;
+    margin-top: 0;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: 30px auto 0;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #8b5e20;
+}
+
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #8b5e20;
+    color: white;
+    border: none;
+    padding: 16px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background: #6e4718;
+}
+
+.note {
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background: #0b0b0b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>LiveStory</h1>
+<h2>Historie pisane światłem</h2>
+<p>
+Witaj w LiveStory. Tworzymy personalizowane litofany ze zdjęć, które zamieniają wspomnienia w światło.  
+Idealny prezent na urodziny, rocznice, święta i wyjątkowe chwile.
+</p>
+</header>
+
+<section>
+<h2>Nasza oferta</h2>
+
+<div class="products">
+
+<div class="product">
+<h3>Sam litofan</h3>
+<p>Minimalistyczna forma bez ramki</p>
+<div class="price">od 69 zł</div>
+</div>
+
+<div class="product">
+<h3>Litofan w ramce</h3>
+<p>Klasyczna i elegancka oprawa</p>
+<div class="price">85 – 100 zł</div>
+</div>
+
+<div class="product">
+<h3>Litofan na podstawce</h3>
+<p>Miejsce na świeczkę z tyłu</p>
+<div class="price">od 99 zł</div>
+</div>
+
+<div class="product">
+<h3>Premium LED</h3>
+<p>Podświetlana ramka LED</p>
+<div class="price">149 zł</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Zamówienie LiveStory</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+<label>Imię i nazwisko</label>
+<input type="text" required>
+
+<label>Adres e-mail</label>
+<input type="email" required>
+
+<label>Wybierz produkt</label>
+<select>
+<option>Sam litofan</option>
+<option>Litofan w ramce</option>
+<option>Litofan na podstawce</option>
+<option>Premium LED</option>
+</select>
+
+<label>Rozmiar</label>
+<select>
+<option>Mały</option>
+<option>Średni</option>
+<option>Duży</option>
+</select>
+
+<label>Wysyłka</label>
+<select>
+<option>Paczkomat / kurier +20 zł</option>
+</select>
+
+<label>Dodaj zdjęcie</label>
+<input type="file" accept="image/*" required>
+
+<p class="note">
+Zdjęcia oraz zamówienia będą automatycznie wysyłane na adres:<br>
+<strong>lightstory.pl@gmail.com</strong>
+</p>
+
+<button type="submit">📸 Wyślij zamówienie</button>
+
+<hr style="margin:40px 0;">
+
+<a href="https://buy.stripe.com/TEST_LINK">
+<button type="button">💳 Zapłać online</button>
+</a>
+
+<p class="note">
+Płatności: BLIK • karta • szybki przelew<br>
+(Stripe / PayU / Przelewy24 – do podpięcia)
+</p>
+
+</form>
+</section>
+
+<footer>
+© 2026 <strong>LiveStory</strong> – Historie pisane światłem | LiveStory.pl
+</footer>
+
+</body>
+</html>
